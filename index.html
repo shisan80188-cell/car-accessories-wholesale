@@ -3,194 +3,226 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoVantage — Premium Car Accessories Wholesale</title>
-<meta name="description" content="Factory-direct car accessories wholesale. Phone mounts, key fobs, chargers & more. Low MOQ, fast US shipping, OEM/ODM available.">
+<title>AutoVantage — Factory-Direct Car Accessories Wholesale</title>
+<meta name="description" content="Premium car accessories at factory-direct prices. Phone mounts, key fobs, chargers & 500+ SKUs. Low MOQ, fast US shipping, OEM/ODM. Get a quote in 24 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0b1220;--navy-2:#111c2f;--ink:#0f172a;--muted:#5b6472;--line:#e6e9ef;--bg:#f7f8fa;--white:#fff;
-  --accent:#f97316;--accent-2:#ea580c;--blue:#2563eb;--radius:16px;
-  --shadow:0 10px 30px rgba(11,18,32,.08);--shadow-lg:0 24px 60px rgba(11,18,32,.14);
+  --bg:#ffffff;--bg-2:#f6f7f9;--ink:#0c1220;--muted:#5b6472;--faint:#98a1b0;
+  --line:#e8eaf0;--accent:#1d4ed8;--accent-2:#1e40af;--red:#dc2626;
+  --r:18px;--r-sm:12px;
+  --shadow:0 1px 2px rgba(12,18,32,.04),0 10px 30px rgba(12,18,32,.07);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:16px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
-.container{max-width:1180px;margin:0 auto;padding:0 24px}
-h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
-.topbar{background:var(--navy);color:#cbd5e1;font-size:13px}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;height:36px}
-.topbar a{color:#cbd5e1}.topbar a:hover{color:#fff}
-nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:50}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{font-weight:800;font-size:22px;letter-spacing:-.02em;color:var(--navy)}.logo span{color:var(--accent)}
-.nav-links{display:flex;gap:32px;font-size:15px;font-weight:500}
-.nav-links a{color:var(--ink);transition:color .15s}.nav-links a:hover{color:var(--accent)}
-.nav-cta{display:flex;align-items:center;gap:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 22px;border-radius:10px;font-weight:600;font-size:15px;cursor:pointer;transition:all .18s;border:1px solid transparent}
-.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-2);transform:translateY(-1px);box-shadow:0 8px 20px rgba(249,115,22,.35)}
-.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:#cbd5e1;background:#f7f8fa}
-.btn-dark{background:var(--navy);color:#fff}.btn-dark:hover{background:var(--navy-2)}
-.hero{position:relative;background:linear-gradient(135deg,#0b1220 0%,#13243f 55%,#1b3a5e 100%);color:#fff;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.28),transparent 70%)}
-.hero::before{content:"";position:absolute;left:-80px;bottom:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.25),transparent 70%)}
-.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:88px;padding-bottom:96px}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fde68a}
-.hero h1{font-size:56px;font-weight:800;margin:22px 0 18px}
-.hero h1 .hl{color:#f97316}
-.hero p.sub{font-size:18px;color:#cbd5e1;max-width:520px;margin-bottom:32px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
-.hero-stats{display:flex;gap:36px;margin-top:44px;flex-wrap:wrap}
-.hero-stats .stat b{display:block;font-size:28px;font-weight:800}
-.hero-stats .stat span{font-size:13px;color:#94a3b8}
-.hero-visual{position:relative;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;backdrop-filter:blur(6px)}
-.hero-visual img{border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.4)}
-.hero-badge{position:absolute;top:20px;left:20px;background:rgba(11,18,32,.8);color:#fff;font-size:13px;font-weight:600;padding:8px 14px;border-radius:10px;backdrop-filter:blur(6px)}
-.hero-badge.accent{left:auto;right:20px;top:auto;bottom:20px;background:var(--accent)}
-.trustbar{border-bottom:1px solid var(--line);background:#fff}
-.trustbar .container{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:34px 24px}
-.trust-item{text-align:center}.trust-item b{display:block;font-size:26px;font-weight:800;color:var(--navy)}.trust-item span{font-size:14px;color:var(--muted)}
-.section{padding:88px 0}.section.alt{background:var(--bg)}
-.sec-head{text-align:center;max-width:640px;margin:0 auto 56px}
-.sec-head .tag{display:inline-block;color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
-.sec-head h2{font-size:40px;font-weight:800;margin-bottom:14px}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{letter-spacing:-.03em;font-weight:800;line-height:1.08}
+.icon{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:900;font-size:19px;letter-spacing:-.03em}
+.logo em{font-style:normal;color:var(--accent)}
+.nav-links{display:flex;gap:30px;font-size:14.5px;font-weight:500;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:10px;font-weight:600;font-size:14.5px;cursor:pointer;border:1px solid transparent;transition:all .18s;white-space:nowrap}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#000;transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:var(--accent-2);transform:translateY(-1px)}
+.btn-light{background:#fff;color:var(--ink);border-color:var(--line)}.btn-light:hover{border-color:#d4d8e0;background:#fafafa}
+
+.hero{padding:96px 0 64px;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--accent);background:#eef4ff;border:1px solid #dbe6ff;padding:6px 14px;border-radius:999px;margin-bottom:26px}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:#22c55e}
+.hero h1{font-size:clamp(42px,6.6vw,74px);font-weight:900;letter-spacing:-.045em;margin-bottom:22px;line-height:1.02}
+.hero h1 .hl{color:var(--accent)}
+.hero p{font-size:19px;color:var(--muted);max-width:620px;margin:0 auto 34px}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-visual{margin-top:60px;max-width:920px;margin-left:auto;margin-right:auto}
+.hero-visual .frame{border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;background:var(--bg-2)}
+.trust-in{display:flex;justify-content:center;gap:44px;flex-wrap:wrap;font-size:14px;color:var(--faint);font-weight:500}
+.trust-in b{color:var(--ink);font-weight:700}
+
+.section{padding:96px 0}
+.section.alt{background:var(--bg-2)}
+.sec-head{max-width:660px;margin:0 auto 60px;text-align:center}
+.sec-head .kicker{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:14px}
+.sec-head h2{font-size:clamp(30px,4vw,44px);font-weight:800;margin-bottom:14px}
 .sec-head p{color:var(--muted);font-size:17px}
-.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.cat{position:relative;background:linear-gradient(160deg,#f8fafc,#eef2f7);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:all .2s;overflow:hidden}
-.cat:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cbd5e1}
-.cat .ic{width:52px;height:52px;border-radius:12px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
-.cat h3{font-size:20px;font-weight:700;margin-bottom:8px}.cat p{color:var(--muted);font-size:14px}
-.cat .link{display:inline-block;margin-top:16px;font-size:14px;font-weight:600;color:var(--accent)}
-.prods{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.prod{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:all .2s}
-.prod:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.prod .thumb{aspect-ratio:1/1;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:20px}
+
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{display:flex;flex-direction:column;gap:14px;padding:26px;border:1px solid var(--line);border-radius:var(--r);transition:all .2s;background:#fff}
+.cat:hover{border-color:#d4d8e0;transform:translateY(-3px);box-shadow:var(--shadow)}
+.cat .ic{width:42px;height:42px;border-radius:11px;background:var(--bg-2);display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.cat h3{font-size:17px;font-weight:700}
+.cat p{font-size:14px;color:var(--muted);flex:1}
+.cat .more{font-size:13.5px;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+.cat .more::after{content:"→";transition:transform .2s}
+.cat:hover .more::after{transform:translateX(3px)}
+
+.prods{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prod{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;transition:all .2s}
+.prod:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.prod .thumb{aspect-ratio:1/1;background:var(--bg-2);display:flex;align-items:center;justify-content:center;padding:22px}
 .prod .thumb img{max-height:100%;border-radius:10px}
-.prod .thumb .ph{width:100%;height:100%;background:linear-gradient(135deg,#e2e8f0,#cbd5e1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:40px;color:#94a3b8}
-.prod .body{padding:18px}.prod h4{font-size:16px;font-weight:600;margin-bottom:6px}.prod .sku{font-size:12px;color:var(--muted)}
+.prod .thumb .ph{width:100%;height:100%;background:linear-gradient(135deg,#eceef2,#dfe2e8);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#b0b6c0}
+.prod .body{padding:18px}
+.prod h4{font-size:15px;font-weight:600;margin-bottom:4px}
+.prod .sku{font-size:12.5px;color:var(--faint)}
 .prod .foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
-.prod .moq{font-size:13px;color:var(--muted)}.prod .btn{font-size:13px;padding:8px 16px}
-.why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.why-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px}
-.why-card .ic{font-size:28px;margin-bottom:16px}.why-card h3{font-size:18px;font-weight:700;margin-bottom:8px}.why-card p{color:var(--muted);font-size:15px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.step{position:relative;text-align:center;padding:0 10px}
-.step .n{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;margin:0 auto 16px}
-.step h3{font-size:17px;font-weight:700;margin-bottom:6px}.step p{font-size:14px;color:var(--muted)}
-.testis{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.testi{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.testi .stars{color:#f59e0b;font-size:15px;letter-spacing:2px;margin-bottom:14px}
-.testi p{color:var(--ink);font-size:15px;margin-bottom:18px}
+.prod .moq{font-size:13px;color:var(--muted)}
+.prod .btn{font-size:13px;padding:8px 16px}
+
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.why-card{padding:28px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+.why-card .ic{width:40px;height:40px;border-radius:10px;background:var(--bg-2);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--ink)}
+.why-card h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.why-card p{font-size:14.5px;color:var(--muted)}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{padding:0 6px}
+.step .n{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:16px;color:var(--ink)}
+.step h3{font-size:16px;font-weight:700;margin-bottom:6px}
+.step p{font-size:14px;color:var(--muted)}
+
+.testis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.testi{padding:26px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+.testi .stars{color:#f59e0b;font-size:14px;letter-spacing:3px;margin-bottom:14px}
+.testi p{font-size:14.5px;margin-bottom:18px}
 .testi .who{display:flex;align-items:center;gap:12px}
-.testi .av{width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
-.testi .who b{font-size:14px}.testi .who span{font-size:13px;color:var(--muted)}
-.cta{background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;text-align:center;border-radius:24px;padding:64px 40px}
-.cta h2{font-size:38px;font-weight:800;margin-bottom:14px}.cta p{font-size:17px;opacity:.95;margin-bottom:28px}
-.cta .btn{background:#fff;color:var(--accent-2)}.cta .btn:hover{background:#fff7ed}
-footer{background:var(--navy);color:#cbd5e1;padding:64px 0 32px}
+.testi .av{width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px}
+.testi .who b{font-size:14px;display:block}
+.testi .who span{font-size:13px;color:var(--muted)}
+
+.cta{background:linear-gradient(135deg,#0c1220,#16233f);color:#fff;border-radius:24px;padding:76px 40px;text-align:center}
+.cta h2{font-size:clamp(28px,3.6vw,42px);font-weight:800;margin-bottom:14px}
+.cta p{color:#aeb6c6;font-size:16.5px;margin-bottom:30px}
+.cta .btn{background:#fff;color:var(--ink)}.cta .btn:hover{background:#eef0f4}
+
+footer{border-top:1px solid var(--line);padding:64px 0 40px}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
-.foot-grid .logo{color:#fff;margin-bottom:14px}.foot-grid p{font-size:14px;color:#94a3b8;max-width:300px}
-.foot-grid h4{color:#fff;font-size:15px;margin-bottom:16px}.foot-grid ul{list-style:none}
-.foot-grid ul li{margin-bottom:10px;font-size:14px}.foot-grid ul a{color:#94a3b8}.foot-grid ul a:hover{color:#fff}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:13px;color:#64748b;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-@media(max-width:900px){
-  .hero .container{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px}
-  .hero h1{font-size:40px}
+.foot-grid .logo{font-weight:900;font-size:18px;margin-bottom:12px}
+.foot-grid p{font-size:14px;color:var(--muted);max-width:300px}
+.foot-grid h4{font-size:12.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);margin-bottom:14px}
+.foot-grid ul{list-style:none}
+.foot-grid li{margin-bottom:10px;font-size:14px;color:var(--muted)}
+.foot-grid li a:hover{color:var(--ink)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:24px;font-size:13px;color:var(--faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media(max-width:920px){
   .cats,.prods,.why,.steps,.testis{grid-template-columns:repeat(2,1fr)}
-  .trustbar .container{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1fr 1fr}
   .nav-links{display:none}
+  .hero h1{font-size:46px}
 }
-@media(max-width:560px){.cats,.prods,.why,.steps,.testis{grid-template-columns:1fr}.hero h1{font-size:32px}}
+@media(max-width:560px){.cats,.prods,.why,.steps,.testis{grid-template-columns:1fr}.hero{padding-top:72px}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="container"><div>Factory-direct · OEM/ODM · Worldwide shipping</div><div><a href="mailto:sales@autovantage.com">sales@autovantage.com</a> · <a href="#">+1 (800) 555-0142</a></div></div></div>
-<nav><div class="container nav-inner">
-  <a class="logo" href="#">Auto<span>Vantage</span></a>
-  <div class="nav-links"><a href="#">Home</a><a href="#">Products</a><a href="#">Why Us</a><a href="#">Wholesale</a><a href="#">About</a><a href="#">Contact</a></div>
-  <div class="nav-cta"><a href="#" class="btn btn-ghost">Sign in</a><a href="#" class="btn btn-primary">Request a Quote</a></div>
+
+<nav class="nav"><div class="container nav-in">
+  <a class="logo" href="#">Auto<em>Vantage</em></a>
+  <div class="nav-links">
+    <a href="#">Products</a><a href="#">Why Us</a><a href="#">Wholesale</a><a href="#">About</a><a href="#">Contact</a>
+  </div>
+  <div style="display:flex;gap:10px;align-items:center">
+    <a href="#" class="btn btn-light">Sign in</a>
+    <a href="#" class="btn btn-accent">Get a Quote</a>
+  </div>
 </div></nav>
+
 <header class="hero"><div class="container">
-  <div>
-    <span class="eyebrow">★ Trusted by 2,000+ US retailers</span>
-    <h1>Premium Car Accessories<br><span class="hl">Wholesale Direct</span> from Factory</h1>
-    <p class="sub">Phone mounts, key fobs, chargers and 500+ SKUs at factory prices. Low MOQ, fast US shipping, and full OEM/ODM customization for your brand.</p>
-    <div class="hero-actions"><a href="#" class="btn btn-primary">Request a Quote →</a><a href="#" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3)">Browse Products</a></div>
-    <div class="hero-stats">
-      <div class="stat"><b>500+</b><span>Product SKUs</span></div>
-      <div class="stat"><b>12 yrs</b><span>Export experience</span></div>
-      <div class="stat"><b>30+</b><span>Countries served</span></div>
-      <div class="stat"><b>100 pcs</b><span>Low MOQ</span></div>
-    </div>
+  <span class="badge"><span class="dot"></span> Proudly serving U.S. retailers since 2014</span>
+  <h1>Car accessories,<br><span class="hl">without the markup.</span></h1>
+  <p>Premium mounts, key fobs and 500+ SKUs — factory-direct, shipped fast from our U.S. warehouses. Low MOQ, honest pricing, real support.</p>
+  <div class="hero-actions">
+    <a href="#" class="btn btn-accent">Get a Quote →</a>
+    <a href="#" class="btn btn-light">Browse the Catalog</a>
   </div>
-  <div class="hero-visual"><span class="hero-badge">Best seller</span><img src="assets/phone-mount.png" alt="Car phone mount"><span class="hero-badge accent">From $0.89 / pc</span></div>
+  <div class="hero-visual"><div class="frame"><img src="assets/phone-mount.png" alt="Product showcase"></div></div>
 </div></header>
-<div class="trustbar"><div class="container">
-  <div class="trust-item"><b>ISO 9001</b><span>Certified factory</span></div>
-  <div class="trust-item"><b>7–15 days</b><span>Lead time</span></div>
-  <div class="trust-item"><b>US stock</b><span>Fast domestic shipping</span></div>
-  <div class="trust-item"><b>100%</b><span>Quality inspected</span></div>
+
+<div class="trust"><div class="container trust-in">
+  <span><b>500+</b> SKUs</span>
+  <span><b>12 yrs</b> in business</span>
+  <span><b>U.S. warehouses</b> coast to coast</span>
+  <span><b>100 pcs</b> low MOQ</span>
+  <span><b>7–15 days</b> lead time</span>
+  <span><b>ISO 9001</b> certified</span>
 </div></div>
+
 <section class="section"><div class="container">
-  <div class="sec-head"><span class="tag">Product Categories</span><h2>Everything your customers need</h2><p>Six in-demand categories, all factory-direct with consistent quality and competitive wholesale pricing.</p></div>
+  <div class="sec-head"><div class="kicker">Categories</div><h2>What your customers are buying</h2><p>Six proven categories, factory-direct with consistent quality.</p></div>
   <div class="cats">
-    <a class="cat" href="#"><span class="ic">📱</span><h3>Phone Mounts</h3><p>Air-vent, dash, magnetic & wireless charging mounts.</p><span class="link">View category →</span></a>
-    <a class="cat" href="#"><span class="ic">🔑</span><h3>Key Fobs & Remotes</h3><p>Replacement remotes, smart keys, covers & shells.</p><span class="link">View category →</span></a>
-    <a class="cat" href="#"><span class="ic">🔌</span><h3>Chargers & Cables</h3><p>Car chargers, fast-charge cables, adapters.</p><span class="link">View category →</span></a>
-    <a class="cat" href="#"><span class="ic">💡</span><h3>LED Lighting</h3><p>Interior & exterior LED kits, headlight bulbs.</p><span class="link">View category →</span></a>
-    <a class="cat" href="#"><span class="ic">🧴</span><h3>Interior Care</h3><p>Organizers, mats, seat covers, air fresheners.</p><span class="link">View category →</span></a>
-    <a class="cat" href="#"><span class="ic">🛡️</span><h3>Exterior Accessories</h3><p>Mud flaps, mirror covers, trim & protection.</p><span class="link">View category →</span></a>
+    <a class="cat" href="#"><span class="ic"><svg class="icon" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/></svg></span><h3>Phone Mounts</h3><p>Air-vent, dash, magnetic & wireless charging mounts.</p><span class="more">Shop</span></a>
+    <a class="cat" href="#"><span class="ic"><svg class="icon" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="3.5"/><path d="M10.5 13.5 20 4"/><path d="M16 4h4v4"/></svg></span><h3>Key Fobs & Remotes</h3><p>Replacement remotes, smart keys, covers & shells.</p><span class="more">Shop</span></a>
+    <a class="cat" href="#"><span class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M13 3 5 13h5l-1 8 8-10h-5z"/></svg></span><h3>Chargers & Cables</h3><p>Car chargers, fast-charge cables, adapters.</p><span class="more">Shop</span></a>
+    <a class="cat" href="#"><span class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.2V17h6v-1.3c0-.8.4-1.6 1-2.2A6 6 0 0 0 12 3z"/></svg></span><h3>LED Lighting</h3><p>Interior & exterior LED kits, headlight bulbs.</p><span class="more">Shop</span></a>
+    <a class="cat" href="#"><span class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 9V7a4 4 0 0 1 8 0v2"/></svg></span><h3>Interior Care</h3><p>Organizers, mats, seat covers, air fresheners.</p><span class="more">Shop</span></a>
+    <a class="cat" href="#"><span class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11"/><path d="M4 11h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1.5a2 2 0 1 0-3 0h-7a2 2 0 1 0-3 0H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z"/></svg></span><h3>Exterior</h3><p>Mud flaps, mirror covers, trim & protection.</p><span class="more">Shop</span></a>
   </div>
 </div></section>
+
 <section class="section alt"><div class="container">
-  <div class="sec-head"><span class="tag">Featured Products</span><h2>Best sellers, ready to ship</h2><p>Proven top-performers with US warehouse stock and fast restock lead times.</p></div>
+  <div class="sec-head"><div class="kicker">Featured</div><h2>Best sellers, ready to ship</h2><p>Proven top-performers with U.S. warehouse stock.</p></div>
   <div class="prods">
-    <div class="prod"><div class="thumb"><img src="assets/phone-mount.png" alt="Universal phone mount"></div><div class="body"><h4>Universal Air-Vent Phone Mount</h4><span class="sku">SKU: PM-101</span><div class="foot"><span class="moq">MOQ 100 · from $0.89</span><a class="btn btn-primary" href="#">Inquire</a></div></div></div>
-    <div class="prod"><div class="thumb"><div class="ph">🔑</div></div><div class="body"><h4>Smart Key Fob (3-Button)</h4><span class="sku">SKU: KF-220</span><div class="foot"><span class="moq">MOQ 200 · from $2.40</span><a class="btn btn-primary" href="#">Inquire</a></div></div></div>
-    <div class="prod"><div class="thumb"><div class="ph">🔌</div></div><div class="body"><h4>Dual-Port Fast Car Charger</h4><span class="sku">SKU: CC-305</span><div class="foot"><span class="moq">MOQ 200 · from $1.15</span><a class="btn btn-primary" href="#">Inquire</a></div></div></div>
-    <div class="prod"><div class="thumb"><div class="ph">💡</div></div><div class="body"><h4>LED Interior Light Kit</h4><span class="sku">SKU: LT-410</span><div class="foot"><span class="moq">MOQ 100 · from $3.20</span><a class="btn btn-primary" href="#">Inquire</a></div></div></div>
+    <div class="prod"><div class="thumb"><img src="assets/phone-mount.png" alt="Universal phone mount"></div><div class="body"><h4>Universal Air-Vent Phone Mount</h4><span class="sku">PM-101</span><div class="foot"><span class="moq">MOQ 100 · $0.89</span><a class="btn btn-dark" href="#">Inquire</a></div></div></div>
+    <div class="prod"><div class="thumb"><div class="ph"><svg class="icon" viewBox="0 0 24 24" width="34" height="34"><circle cx="7.5" cy="15.5" r="3.5"/><path d="M10.5 13.5 20 4"/><path d="M16 4h4v4"/></svg></div></div><div class="body"><h4>Smart Key Fob (3-Button)</h4><span class="sku">KF-220</span><div class="foot"><span class="moq">MOQ 200 · $2.40</span><a class="btn btn-dark" href="#">Inquire</a></div></div></div>
+    <div class="prod"><div class="thumb"><div class="ph"><svg class="icon" viewBox="0 0 24 24" width="34" height="34"><path d="M13 3 5 13h5l-1 8 8-10h-5z"/></svg></div></div><div class="body"><h4>Dual-Port Fast Car Charger</h4><span class="sku">CC-305</span><div class="foot"><span class="moq">MOQ 200 · $1.15</span><a class="btn btn-dark" href="#">Inquire</a></div></div></div>
+    <div class="prod"><div class="thumb"><div class="ph"><svg class="icon" viewBox="0 0 24 24" width="34" height="34"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.2V17h6v-1.3c0-.8.4-1.6 1-2.2A6 6 0 0 0 12 3z"/></svg></div></div><div class="body"><h4>LED Interior Light Kit</h4><span class="sku">LT-410</span><div class="foot"><span class="moq">MOQ 100 · $3.20</span><a class="btn btn-dark" href="#">Inquire</a></div></div></div>
   </div>
 </div></section>
+
 <section class="section"><div class="container">
-  <div class="sec-head"><span class="tag">Why AutoVantage</span><h2>Built for serious buyers</h2><p>We remove the friction from sourcing — consistent quality, transparent pricing, dependable delivery.</p></div>
+  <div class="sec-head"><div class="kicker">Why AutoVantage</div><h2>The AutoVantage difference</h2><p>We built our business on one thing: making sourcing painless.</p></div>
   <div class="why">
-    <div class="why-card"><div class="ic">🏭</div><h3>Factory-Direct Pricing</h3><p>No middlemen. Buy straight from our own ISO-certified facility for the best margins.</p></div>
-    <div class="why-card"><div class="ic">🎨</div><h3>OEM / ODM Customization</h3><p>Your logo, packaging and colors. Full private-label support from design to delivery.</p></div>
-    <div class="why-card"><div class="ic">✅</div><h3>100% Quality Checked</h3><p>Every order passes multi-point QC inspection before it leaves the factory.</p></div>
-    <div class="why-card"><div class="ic">🚚</div><h3>Fast US Fulfillment</h3><p>US warehouse stock for quick domestic shipping; 7–15 day restock on custom runs.</p></div>
-    <div class="why-card"><div class="ic">📉</div><h3>Low MOQ, Low Risk</h3><p>Start with as few as 100 pieces to test the market before scaling up.</p></div>
-    <div class="why-card"><div class="ic">🤝</div><h3>Dedicated Account Manager</h3><p>A single point of contact who knows your account and responds within 24 hours.</p></div>
+    <div class="why-card"><div class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M4 20V9l4-3 4 3v11"/><path d="M12 20V6l4-3 4 3v14"/></svg></div><h3>No middlemen, no markup</h3><p>Buy straight from our factory and keep the margins for yourself.</p></div>
+    <div class="why-card"><div class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 3 7v6c0 5 3.8 8.4 9 9 5.2-.6 9-4 9-9V7z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Quality you can count on</h3><p>Every order passes multi-point QC before it leaves the factory.</p></div>
+    <div class="why-card"><div class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M3 5h11v11H3z"/><circle cx="7.5" cy="9.5" r="1.5"/><path d="M17 8h4v11H9v-3"/></svg></div><h3>Your brand, your way</h3><p>Full OEM/ODM — logo, packaging and colors, done for you.</p></div>
+    <div class="why-card"><div class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M1 6h13v10H1z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="5.5" cy="18" r="1.5"/><circle cx="17.5" cy="18" r="1.5"/></svg></div><h3>Fast U.S. shipping</h3><p>Warehouses on both coasts mean your stock arrives in days, not weeks.</p></div>
+    <div class="why-card"><div class="ic"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17 9 4h6l6 13"/><path d="M5 17h14"/><path d="M9 21h6"/></svg></div><h3>Start small, scale fast</h3><p>Test the market with as few as 100 pieces. No giant commitments.</p></div>
+    <div class="why-card"><div class="ic"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4 20c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></div><h3>Real humans, real support</h3><p>U.S.-based account managers who pick up the phone and reply within 24h.</p></div>
   </div>
 </div></section>
+
 <section class="section alt"><div class="container">
-  <div class="sec-head"><span class="tag">How It Works</span><h2>From inquiry to your warehouse</h2></div>
+  <div class="sec-head"><div class="kicker">How it works</div><h2>From inquiry to your warehouse</h2></div>
   <div class="steps">
-    <div class="step"><div class="n">1</div><h3>Send Inquiry</h3><p>Tell us the products and quantities you need.</p></div>
-    <div class="step"><div class="n">2</div><h3>Get Quote</h3><p>Receive pricing, samples & lead time within 24h.</p></div>
-    <div class="step"><div class="n">3</div><h3>Production</h3><p>We manufacture & QC your order to spec.</p></div>
-    <div class="step"><div class="n">4</div><h3>Ship & Restock</h3><p>Delivered to your US warehouse, ready to sell.</p></div>
+    <div class="step"><div class="n">1</div><h3>Send an inquiry</h3><p>Tell us what you need and how many.</p></div>
+    <div class="step"><div class="n">2</div><h3>Get a quote</h3><p>Pricing, samples & lead time within 24 hours.</p></div>
+    <div class="step"><div class="n">3</div><h3>We produce it</h3><p>Manufactured and QC'd to your spec.</p></div>
+    <div class="step"><div class="n">4</div><h3>Ship & restock</h3><p>Delivered to your warehouse, ready to sell.</p></div>
   </div>
 </div></section>
+
 <section class="section"><div class="container">
-  <div class="sec-head"><span class="tag">What Buyers Say</span><h2>Trusted by growing retailers</h2></div>
+  <div class="sec-head"><div class="kicker">Customers</div><h2>Retailers who trust us</h2></div>
   <div class="testis">
-    <div class="testi"><div class="stars">★★★★★</div><p>"Consistent quality across three years of orders. The phone mounts sell themselves — our repeat order rate is outstanding."</p><div class="who"><div class="av">M</div><div><b>Michael R.</b><span>Auto Parts Distributor, TX</span></div></div></div>
-    <div class="testi"><div class="stars">★★★★★</div><p>"OEM packaging came out perfect. They handled everything from logo design to freight — a true one-stop partner."</p><div class="who"><div class="av">J</div><div><b>Jessica L.</b><span>E-commerce Brand Owner, CA</span></div></div></div>
-    <div class="testi"><div class="stars">★★★★★</div><p>"Low MOQ let us test new SKUs without heavy inventory risk. Turnaround is reliably fast."</p><div class="who"><div class="av">D</div><div><b>David K.</b><span>Retail Buyer, FL</span></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>"Three years, zero quality issues. The mounts basically sell themselves."</p><div class="who"><div class="av">M</div><div><b>Michael R.</b><span>Auto Parts Distributor · TX</span></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>"They handled everything — logo, packaging, freight. A true one-stop shop."</p><div class="who"><div class="av">J</div><div><b>Jessica L.</b><span>Brand Owner · CA</span></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>"Low MOQ let me test new SKUs without gambling on inventory."</p><div class="who"><div class="av">D</div><div><b>David K.</b><span>Retail Buyer · FL</span></div></div></div>
   </div>
 </div></section>
+
 <section class="section"><div class="container">
-  <div class="cta"><h2>Ready to source premium car accessories?</h2><p>Get a wholesale quote within 24 hours — no obligation, no minimum commitment to ask.</p><a href="#" class="btn">Request a Quote Now</a></div>
+  <div class="cta"><h2>Ready to stock up?</h2><p>Get a wholesale quote within 24 hours. No obligation, no pressure.</p><a href="#" class="btn">Get a Quote</a></div>
 </div></section>
+
 <footer><div class="container">
   <div class="foot-grid">
-    <div><div class="logo">Auto<span style="color:#f97316">Vantage</span></div><p>Factory-direct car accessories wholesale for the US market. Quality products, competitive pricing, dependable fulfillment.</p></div>
+    <div><div class="logo">Auto<em style="font-style:normal;color:var(--accent)">Vantage</em></div><p>Factory-direct car accessories for the U.S. market. Honest pricing, dependable quality.</p></div>
     <div><h4>Products</h4><ul><li><a href="#">Phone Mounts</a></li><li><a href="#">Key Fobs</a></li><li><a href="#">Chargers</a></li><li><a href="#">LED Lighting</a></li></ul></div>
-    <div><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Why Us</a></li><li><a href="#">Wholesale Terms</a></li><li><a href="#">Contact</a></li></ul></div>
-    <div><h4>Contact</h4><ul><li><a href="mailto:sales@autovantage.com">sales@autovantage.com</a></li><li><a href="#">+1 (800) 555-0142</a></li><li><a href="#">Mon–Fri, 9am–6pm ET</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Why Us</a></li><li><a href="#">Wholesale</a></li><li><a href="#">Contact</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="mailto:sales@autovantage.com">sales@autovantage.com</a></li><li><a href="#">1-800-555-0142</a></li><li><a href="#">Mon–Fri, 9–6 ET</a></li></ul></div>
   </div>
-  <div class="foot-bottom"><span>© 2026 AutoVantage Wholesale. All rights reserved.</span><span>Privacy · Terms · Sitemap</span></div>
+  <div class="foot-bottom"><span>© 2026 AutoVantage. All rights reserved.</span><span>Privacy · Terms</span></div>
 </div></footer>
+
 </body>
 </html>
